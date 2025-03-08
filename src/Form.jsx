@@ -10,11 +10,13 @@ export default function Form () {
     const correct = answer === '2'
     console.log('correct', correct)
   }
+  const answered = answer !== ''
+  const button = answered && <button>Submit!!!</button>
   return (
     <form onSubmit={handleSubmit}>
       <p>1 + 1 = ???</p>
       <input value={answer} onChange={handleChange} />
-      <button>Submit</button>
+      {button}
     </form>
   )
 }
