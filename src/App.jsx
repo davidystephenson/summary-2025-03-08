@@ -2,20 +2,10 @@ import Hello from "./Hello"
 
 export default function App () {
   return (
-    <div>
-      <Hello />
-      <Hello />
-      <Hello />
-      <Hello />
-      <Hello />
-      <Hello />
-      <Hello />
-      <Hello />
-      <Hello />
-      <Hello />
-      <Hello />
-      <Hello />
-      <Hello />
+    <div id='wrapper'>
+      <Hello person='Dorothy' />
+      <Hello person='Zelda' />
+      <Hello person='Tallulah' />
     </div>
   )
 }
